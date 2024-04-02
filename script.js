@@ -8,9 +8,9 @@ function init() {
 	});
 
     let placemark=new ymaps.Placemark(center,{
-    balloonContentHeader: 'Начальная точка',
-    balloonContentBody: 'ДОМ',
-    balloonContentFooter: 'Хабаровск',
+        balloonContent:`<div class="balloon">        
+        Balloon
+        </div>`
     }, {
     iconLayout: 'default#image',
     iconImageHref: 'D:/Такси/images/pin-point.png',
@@ -20,19 +20,16 @@ function init() {
     });
     
     let placemark1=new ymaps.Placemark(center,{
-        balloonContent: `<div class="balloon">        
-        Balloon
-        </div>`
-        
+         
+        balloonContentHeader: 'Начальная точка',
+    balloonContentBody: 'ДОМ',
+    balloonContentFooter: 'Хабаровск',
 
         }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'D:/Такси/images/pin-point.png',
         
-        iconImageOffset: [-10, -20]
         });
     
  
-    map.geoObjects.add(placemark)
+    map.geoObjects.add(placemark1)
 }
 ymaps.ready(init);
