@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<header class="header-outer">
-		<div class="header-inner responsive-wrapper">
+	<header align="center">
+		
 			<div class="header-logo">
 				<img src="images\car-logo.png" />
 			</div>
 			<nav class="header-navigation">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Blog</a>
-				<a href="#">Contact Us</a>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Аккаунт</a></li>
+					<li><a href="#">О компании</a></li>
+					
+				</ul>
+				
 				<button>Menu</button>
 			</nav>
-		</div>
+		
 	</header>
 <head>
 	<meta charset="UTF-8">
@@ -22,10 +26,55 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<!-- А здесь — наш плавающий блок -->
+    <div class="col-md-2">
+		<div class="float-block">
+		  <!-- здесь тоже можно прописать что угодно -->
+		</div>
+	</div>
 	<div id="map-test" class="map"></div>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_ru&apikey=940977c7-7554-4b97-b301-b98b591efffb" type="text/javascript">
 	</script>
 	
 	<script src="script.js"></script>
 </body>
+
+<footer class="new_footer_area bg_color">
+	<div class="new_footer_top">
+		<div class="container">
+			<div class="row">
+				
+				
+				<div class="col-lg-3 col-md-6">
+					<div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+						<h3 class="f-title f_600 t_color f_size_18">Help</h3>
+						<ul class="list-unstyled f_list">
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Term &amp; conditions</a></li>
+							<li><a href="#">Reporting</a></li>
+							<li><a href="#">Documentation</a></li>
+							<li><a href="#">Support Policy</a></li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer_bg">
+			<div class="footer_bg_one"></div>
+			<div class="footer_bg_two"></div>
+		</div>
+	</div>
+	<div class="footer_bottom">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 col-sm-7">
+					<p class="mb-0 f_400">© Sened\F1nutic Inc.. 2024 All rights reserved.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</footer>
 </html>
