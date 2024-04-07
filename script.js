@@ -4,8 +4,10 @@ function init() {
 	let map = new ymaps.Map('map-test', {
 		center: center,
 		zoom: 17,
-        controls:['routePanelControl']
-	});
+        controls:['routePanelControl'],
+        yandexMapDisablePoiInteractivity: true
+
+	},{suppressMapOpenBlock: true});
 
     let city='Хабаровск';
     let control=map.controls.get('routePanelControl')

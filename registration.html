@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="reg_style.css">
+<body>
+<form action="action_page.php" style="border:1px solid #ccc">
+    <div class="container">
+      <h1>Форма регистрации</h1>
+      <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+      <hr>
+  
+      <label for="last_name"><b>Фамилия</b></label>
+      <input type="text" placeholder="Введите вашу фамилию" name="last_name" required>
+
+      <label for="first_name"><b>Имя</b></label>
+      <input type="text" placeholder="Введите ваше имя" name="first_name" required>
+
+      <label for="middle_name"><b>Отчество</b></label>
+      <input type="text" placeholder="Введите ваше отчество" name="middle_name" required>
+
+      <label for="birthday"><b>Дата рождения</b></label>
+      <input type="date" placeholder="Введите ваше отчество" name="birthday" required>
+  
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введите пароль" name="psw" required>
+  
+      <label for="psw-repeat"><b>Повторить пароль</b></label>
+      <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+  
+      <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="#" style="color:dodgerblue">Условия и конфиденциальность</a>.</p>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Отменить</button>
+        <button type="submit" class="signupbtn">Регистрация</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
